@@ -1,4 +1,4 @@
-"""calc v1.0"""
+"""calc v5.0"""
 def input_number():
     num=input("Vvedite chislo: ")
     if num == '':
@@ -21,7 +21,7 @@ def calc_me(x=None,y=None,oper=None):
     if x is None:
         return "ERROR: send me Number1"
     if y is None:
-        return "ERROR: send me Number2"
+        return "ERROR: send me Number1"
     if (not isinstance(x, (int, float))) or (not isinstance(y, (int, float))):
         return "ERROR: now it is does not supported"
 
