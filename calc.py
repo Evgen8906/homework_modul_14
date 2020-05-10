@@ -11,9 +11,13 @@ def input_number():
 
 def input_oper():
     oper=input("Operaciya('+','-','*','/','^','**'): ")
+
+    if oper == '':
+        oper = None
+
     return oper
 
-def calc_me(x,y,oper):
+def calc_me(x=None,y=None,oper=None):
     if x is None:
         return "ERROR: send me Number1"
     if y is None:
@@ -36,7 +40,7 @@ def calc_me(x,y,oper):
     elif oper == '^' or oper == '**':
         return x ** y
     else:
-        return("Wrong operatiopn")
+        return "ERROR: Uknow operation"
 
 def body():
     num1 = input_number()
